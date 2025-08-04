@@ -476,8 +476,8 @@ HamCop:
         dc.w    bplcon1,0
 
         ; sprite to mask left fringing
-        dc.w    color17,0
-        dc.w    spr0pos,$2f
+        dc.w    color17,$000
+        dc.w    spr0pos,$2f-8
         dc.w    spr0datb,0
 
         dc.w    color00,$112
