@@ -1178,15 +1178,16 @@ CopLineE:
         dc.w    spr4ctl,$000f
         dc.w    spr5ctl,$000f
         dc.w    spr6ctl,$000f
+
+        dc.w    color00,0 ; aligned with end of line
+        dc.w    color01,$feb
+
         dc.w    spr7ctl,$000f
 
 CopScroller:
 
 CopDma:
         dc.l    $00968000
-
-        dc.w    color00,0
-        dc.w    color01,$feb
 
         ; disable bitplanes
         dc.w    bplcon0,0
